@@ -1,0 +1,135 @@
+  
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  nav {
+    text-align: center;
+    padding: 0.5em;
+    background: rgba(255,255,255, 0.3);;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5em 0;
+    color: #222;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  
+  main > .heading {
+    text-align: center;
+    padding: 2em 0.5em;
+    margin-bottom: 1em;
+  }
+  
+  .heading > .subtitle {
+    text-transform: uppercase;
+  }
+  
+  .content {
+    background: rgba(255,255,255, 0.3);;
+    padding: 2em;
+    box-sizing: border-box;
+    margin: 0 1em;
+  }
+  
+  .content > h2 {
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+  }
+  
+  form .item {
+    padding: 1em 0;
+  }
+  form .item #surname2{
+      margin-top: 27px;
+  }
+  
+  form button {
+    background: #222;
+    color: white;
+    border: 0;
+    padding: 1em 1.5em;
+  }
+  
+  form button:hover {
+    background: #444;
+  }
+  
+  .content > table {
+    margin-top: 2em;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  tr,
+  th,
+  td {
+    border: 1px solid #222;
+  }
+  
+  th,
+  td {
+    padding: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    color: gray;
+    padding: 1em;
+  }
+  
+  @media screen and (min-width: 960px) {
+      body{
+          background-position: bottom;
+      }
+    nav {
+      background: transparent;
+      margin: 0.5em 0;
+    }
+  
+    nav a {
+      display: inline;
+      padding: 0.5em 1em;
+    }
+  
+    nav a:hover {
+      text-decoration: underline;
+    }
+  
+    main > .heading {
+      padding: 4em 0;
+    }
+  
+    .content {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  
+    form > .group {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .group > .item {
+      width: 48%;
+    }
+  }
