@@ -7,7 +7,7 @@ document.forms.registration.addEventListener("submit", e => {
     const surname = e.target.elements.surname.value;
     const name2 = e.target.elements.name2.value;
     const surname2 = e.target.elements.surname2.value;
-    if(name !== "" && surname != ""){
+    if(name.trim() !== "" && surname.trim() != ""){
     const tr = table.insertRow(-1);
     const td1 = tr.insertCell(-1);
     const td2 = tr.insertCell(-1);
@@ -17,8 +17,8 @@ document.forms.registration.addEventListener("submit", e => {
     else{
         alert("Įveskite vardą ir pavardę!")
     }
-    
-    if(name2 !=="" && surname2 !== ""){
+
+    if(name2.trim() !=="" && surname2.trim() !== ""){
     const tr = table.insertRow(-1);
     const td1 = tr.insertCell(-1);
     const td2 = tr.insertCell(-1);
