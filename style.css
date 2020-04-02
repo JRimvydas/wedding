@@ -41,7 +41,21 @@ body {
   .content > h2 {
     text-align: center;
   }
-  
+  main h4{
+      margin-bottom: 0;
+  }
+  .notification{
+      background: rgb(219,126,5);
+      color: white;
+      border-radius: 10px;
+      padding: 1em;
+  }
+  .notification::after{
+      content: "\2716";
+      cursor: pointer;
+      float: right;
+      color: white;
+  }
   form label {
     display: block;
     margin-bottom: 4px;
@@ -58,9 +72,6 @@ body {
   
   form .item {
     padding: 1em 0;
-  }
-  form .item #surname2{
-      margin-top: 27px;
   }
   
   form button {

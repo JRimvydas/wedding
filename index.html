@@ -16,7 +16,7 @@
     <header>
         <nav>
             <a href="#">Add Person</a>
-            <a href="#">View Registry</a>
+            <a href="registry.html">View Registry</a>
             <a href="#">RSVP</a>
         </nav>
     </header>
@@ -28,42 +28,34 @@
         </div>
         <div class="content">
             <h2>Add Person</h2>
+            <div class="notification" style="display: none;">This is an error message</div>
             <form id="registration">
                 <div class="group">
                     <div class="item">
                         <label for="name">Name*</label>
                         <input type="text" id="name" name="name" placeholder="Vardas" />
-                        
+
                     </div>
                     <div class="item">
                         <label for="surname">Surname*</label>
                         <input type="text" id="surname" name="surname" placeholder="Pavardė" />
-                        
+
                     </div>
                 </div>
+                <h4>Plus One (OPTIONAL)</h4>
                 <div class="group">
                     <div class="item">
-                        <label for="name">PLUS ONE</label>
                         <input type="text" id="name2" name="name2" placeholder="Vardas" />
-                        
                     </div>
                     <div class="item">
                         <input type="text" id="surname2" name="surname2" placeholder="Pavardė" />
-                        
+
                     </div>
                 </div>
                 <button type="submit">Add
                 </button>
             </form>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Surname</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+            
         </div>
     </main>
 
